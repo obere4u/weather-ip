@@ -15,8 +15,6 @@ app.get("/api/hello", async (req, res) => {
   // Get the request ip
   const clientIp = req.ip;
 
-  console.log("client IP is *********************" + clientIp);
-
   try {
     // Get location info based on IP
     const locationResponse = await axios.get(
