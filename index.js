@@ -36,7 +36,7 @@ app.get("/api/hello", async (req, res) => {
       {
         params: {
           key: weatherKey,
-          q: location.city,
+          q: clientLocation.city,
         },
       }
     );
